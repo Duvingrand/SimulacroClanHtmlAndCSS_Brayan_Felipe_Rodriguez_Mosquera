@@ -55,7 +55,8 @@ main{
 }
 /* ------------------------------------------------------ */
 .Bienvenida{
-    background-image: url(/Recursos/img/imagen1.webp);
+    /* se le agrega la imagen como fondo */
+    background-image: url(/Recursos/img/imagen1.webp); 
     background-size: cover;
     height: 25%;
     width: 100%;
@@ -80,6 +81,7 @@ main{
 .sec-iz{
     margin: 20px;
     text-align: center;
+    /* el lado izquierdo ocupa un 40% */
     width: 40%;
     height: 100%;
     justify-content: center;
@@ -91,7 +93,7 @@ main{
     height: 800px;
     width: 60%;
 }
-
+/* el lado derecho se divide en la parte alta y baja */
 .high{
     height: 500px;
     width: 100%;
