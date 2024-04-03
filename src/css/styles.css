@@ -1,6 +1,7 @@
 
 /* importaciones */
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
 
 *{
     font-family: "Montserrat", sans-serif;
@@ -10,10 +11,191 @@
 
 /* variables */
 :root{
-    --VerdeBosque: (#1A5126);
-    --VerdeClaro: (#8FBF5F);
-    --AzulClaro: (#5CB3FF);
-    --Beige: (#F3E9DC);
-    --MarrónTierra: (#B18F6A);
-    --Blanco: (#FFFFFF);
+    --VerdeBosque: RGB(26, 81, 38);
+    --VerdeClaro: RGB(143, 191, 95);
+    --AzulClaro: RGB(92, 179, 255);
+    --Beige: RGB(243, 233, 220);
+    --MarrónTierra: RGB(177, 143, 106);
+    --Blanco: RGB(255, 255, 255);
+}
+
+*{
+    margin: 0;
+}
+
+
+/* header */
+header{
+    background-color: var(--VerdeBosque);
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    color: var(--Blanco);
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+h1{
+    padding: 20px;
+}
+
+nav{
+    display: flex;
+    list-style: none;
+    gap: 20px;
+    align-items: center;
+    padding: 20px;
+    text-align: center;
+
+}
+
+/* main */
+main{
+    background-color:var(--Beige);
+}
+/* ------------------------------------------------------ */
+.Bienvenida{
+    background-image: url(/Recursos/img/imagen1.webp);
+    background-size: cover;
+    height: 25%;
+    width: 100%;
+    background-position: center;
+    text-align: center;
+    padding: 200px 0px;
+    color: var(--Blanco);
+}
+.Bienvenida h4{
+    padding: 0px 200px;
+    padding-top: 20px;
+}
+/* ------------------------------------------------------ */
+
+.Sec{
+    display: flex;
+    margin: 10px;
+    justify-content: space-between;
+    color: var(--VerdeBosque);
+}
+
+.sec-iz{
+    margin: 20px;
+    text-align: center;
+    width: 40%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.sec-der{
+    height: 800px;
+    width: 60%;
+}
+
+.high{
+    height: 500px;
+    width: 100%;
+    margin-bottom: 10px;
+}
+.low{
+    height: 250px;
+    display: flex;
+    gap: 10px;
+}
+
+.low1{
+    width: 100%;
+}
+
+.low2{
+    width: 100%;
+}
+.Sec p {
+    padding: 0px 150px;
+    
+}
+.Sec img{
+    border-radius: 5px;
+    height: 100%;
+    width: 100%;}
+
+/* ------------------------------------------------------ */
+
+.warning{
+    text-align: center;
+    justify-content: center;
+    color:var(--VerdeBosque);
+}
+
+.titulow{
+    padding: 0px 400px;
+    margin:15px
+}
+
+.warnings-verdes{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+
+.WV{
+    background-color: var(--VerdeClaro);
+    border-radius: 100px;
+    height: 200px;
+    width: 25%;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+    margin:5px
+    
+}
+.WV i{
+    color: var(--Blanco);
+    font-size: 60px;
+    
+}
+.warning-titulo{
+    color: var(--VerdeBosque) !important;
+
+}
+.WV p{
+    padding-top: 20px;
+    color: var(--Blanco);
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+
+
+
+
+
+
+/* footer */
+footer{
+    background-color: var(--VerdeBosque);
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--Blanco);
+    margin-top: 10px;
+}
+
+footer section{
+    display: flex;
+    flex-direction: column;
+}
+
+.redes{
+    display: flex;
+    justify-content: space-around;
+    font-size: 25px;
+    padding-top: 1px;
+}
+
+footer section img{
+    height: 80px;
 }
